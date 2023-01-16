@@ -37,23 +37,26 @@ ul {
 		padding: 0;
 }
 
-.container {
-	width:1200px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-
 img {
 	display: block;
 	max-width: 100%;
 	height: auto;
 }
 
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
 /* Header */
 
 .page-header {
-	outline: 2px solid tomato;
+
 }
 
 .header-container {
@@ -137,25 +140,25 @@ text-transform: uppercase;
 
 /* Section hero */
 
-.container.hero {
-display: flex;
-}
 
-.hero-container {
+.hero-title-container {
 	padding-top:185px ;
 	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 208px;
+	background-image: url(../images/hero/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1070px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
 }
 
 .social-container {
-padding: 282px 58px 140px 27px;
 
 }
 .social-list {
-	display: flex;
-/* flex-direction: column-reverse; */
-	/* margin-top: 282px;
-	margin-bottom: 140px; */
-	transform: rotate(-90deg);
 }
 
 .social-item:not(:last-child){
@@ -191,6 +194,7 @@ padding: 282px 58px 140px 27px;
 }
 
 .hero-title {
+	margin-bottom: 20px;
 	font-family: 'Raleway';
 		font-weight: 700;
 		font-size: 72px;
@@ -209,7 +213,22 @@ padding: 282px 58px 140px 27px;
 
 /* Section about */
 
+.container.about {
+	display: flex;
+}
+
+.about-list {
+	display: flex;
+	margin-right: 30px;
+}
+
+.about-item:not(:last-child){
+	margin-right: 30px;
+}
+
+
 .about-top-text {
+	margin-bottom: 20px;
 	font-weight: 600;
 		font-size: 11px;
 		line-height: 1.36;
@@ -218,6 +237,7 @@ padding: 282px 58px 140px 27px;
 }
 
 .about-title {
+	margin-bottom: 20px;
 	font-family: 'Raleway';
 		font-weight: 700;
 		font-size: 42px;
@@ -228,6 +248,7 @@ padding: 282px 58px 140px 27px;
 }
 
 .about-text {
+	margin-bottom: 20px;
 	font-size: 18px;
 		line-height: 1.67;
 		letter-spacing: 0.02em;
@@ -236,6 +257,7 @@ padding: 282px 58px 140px 27px;
 }
 
 .about-bottom-text {
+	margin-bottom: 42px;
 	font-size: 14px;
 	line-height: 1.86;
 	letter-spacing: 0.02em;
