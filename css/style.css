@@ -376,11 +376,31 @@ display: flex;
 
 /* Section advantages */
 
-.advantages-item {
-	background-color: var(--bg-grey-color);
+
+
+.advantages-list {
+	width: 370px;
+display: flex;
+flex-wrap: wrap;
+
 }
 
+.advantages-item {
+	width: 170px;
+	height: 133px;
+	position: relative;
+	outline: 2px solid black;
+	padding: 20px 24px;
+	background-color: var(--bg-grey-color);
+	display: block;
+	text-align: center;
+}
+
+
+
 .advantages-numbers {
+	display: block;
+	text-align: center;
 	font-weight: 700;
 		font-size: 42px;
 		line-height: 1.35;
@@ -389,6 +409,7 @@ display: flex;
 }
 
 .advantages-text {
+
 	font-weight: 600;
 		font-size: 11px;
 		line-height: 1.36px;
@@ -396,10 +417,17 @@ display: flex;
 }
 
 .icon-plus{
+	display: none;
+	position: absolute;
+	right:75px;
+	top:34px;
 	width: 13px;
 	height: 22px ;
 	fill:var(--accent-color);
 }
+
+
+
 
 .advantages-top-text{
 	font-weight: 600;
@@ -481,12 +509,12 @@ font-family: 'Raleway';
 
 
 
-
-
-
-
-
 /* Section booking */
+
+.booking-section {
+	padding-top:130px;
+	padding-bottom: 120px;
+}
 
 .booking-title{
 	font-family: 'Raleway';
@@ -516,11 +544,6 @@ font-family: 'Raleway';
 background-color: var(--accent-color);
 }
 
-
-
-
-
-/* Section contacts */
 
 .contacts-title {
 	font-family: 'Raleway';
