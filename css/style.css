@@ -45,6 +45,8 @@ img {
 
 .container {
 	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -284,7 +286,23 @@ color: var(--secondary-black-color);
 
 /* Section prices */
 
+.prices-section {
+	background-image: url(../images/prices/prices-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+.prices-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+
 .prices-top-text {
+	margin-bottom: 20px;
 	font-weight: 600;
 		font-size: 11px;
 		line-height: 1.36;
@@ -293,6 +311,7 @@ color: var(--secondary-black-color);
 }
 
 .prices-title {
+	margin-bottom: 44px;
 	font-family: 'Raleway';
 		font-weight: 700;
 		font-size: 42px;
@@ -301,7 +320,23 @@ color: var(--secondary-black-color);
 		color: var(--white-color);
 }
 
-.prices-item {
+.prices-list {
+	padding: 30px 20px;
+	width: calc((100% - 30px) / 2);
+}
+
+.prices-list.first {
+	background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list.second {
+background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.prices-list:not(:last-child) {
+	margin-right: 30px;
+}
+
+.prices-text {
 	font-size: 18px;
 		line-height: 1.67;
 		letter-spacing: 0.02em;
@@ -309,7 +344,20 @@ color: var(--secondary-black-color);
 		color: var(--grey-color);
 }
 
+.prices-item {
+display: flex;
+	justify-content: space-between;
+}
+
+.prices-item:not(:last-child) {
+
+	margin-bottom: 20px;
+}
+
 .prices-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	color: var(--white-color);
 		font-weight: 600;
 		font-size: 12px;
