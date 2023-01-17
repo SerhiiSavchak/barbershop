@@ -56,6 +56,14 @@ padding-top: 120px;
 padding-bottom: 120px;
 }
 
+.title {
+	font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1.16;
+		letter-spacing: 0.05em;
+}
+
 /* Header */
 
 .page-header {
@@ -257,11 +265,6 @@ text-transform: uppercase;
 
 .about-title {
 	margin-bottom: 20px;
-	font-family: 'Raleway';
-		font-weight: 700;
-		font-size: 42px;
-		line-height: 1.16;
-		letter-spacing: 0.05em;
 		max-width: 470px;
 		color: var(--black-color);
 }
@@ -343,11 +346,6 @@ color: var(--secondary-black-color);
 
 .prices-title {
 	margin-bottom: 44px;
-	font-family: 'Raleway';
-		font-weight: 700;
-		font-size: 42px;
-		line-height: 1.16;
-		letter-spacing: 0.05em;
 		color: var(--white-color);
 }
 
@@ -694,11 +692,6 @@ height: 634px;
 
 .booking-title{
 	margin-bottom: 232px;
-	font-family: 'Raleway';
-		font-weight: 700;
-		font-size: 42px;
-		line-height: 1.16;
-		letter-spacing: 0.05em;
 		max-width: 430px;
 		color: var(--white-color);
 }
@@ -741,11 +734,6 @@ background-color: var(--accent-color);
 
 .contacts-title {
 	margin-bottom: 40px;
-	font-family: 'Raleway';
-		font-weight: 700;
-		font-size: 42px;
-		line-height: 1.16;
-		letter-spacing: 0.05em;
 		max-width: 430px;
 		color: var(--white-color);
 }
