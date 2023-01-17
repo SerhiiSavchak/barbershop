@@ -630,6 +630,7 @@ margin-right: 30px;
 display: flex;
 height: 634px;
 
+
 }
 
 .booking-container {
@@ -641,6 +642,7 @@ height: 634px;
 }
 
 .booking-title{
+	margin-bottom: 232px;
 	font-family: 'Raleway';
 		font-weight: 700;
 		font-size: 42px;
