@@ -66,22 +66,26 @@ padding-bottom: 120px;
 
 /* Header */
 
-.header-bg-container {
-		margin-right: 215px;
-height: auto;
-	outline: 2px solid tomato;
-	background-image: url(../images/hero/hero.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+.container.header-main {
+	display: flex;
 }
 
-
-
-.header-container {
+.header-hero-container {
+	/* padding-left: 100px; */
 	display: flex;
-	padding-top: 32px;
-	align-items: center;
+	max-width: 1070px;
+	height: auto;
+	margin-right: 215px;
+	background-image: url(../images/hero/hero.jpg);
+}
 
+.social-container {
+	background-color: var(--white-color);
+	z-index: 1;
+}
+
+.page-header {
+display: flex;
 }
 
 .icon-logo {
@@ -167,8 +171,6 @@ text-transform: uppercase;
 
 
 .social-container {
-	width: 155px;
-	background-color: var(--white-color);
 
 }
 .social-list {
