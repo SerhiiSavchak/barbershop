@@ -553,7 +553,6 @@ padding-top: 30px;
 }
 
 .team-top-text{
-	margin-left: 80px;
 	margin-bottom: 20px;
 	font-weight: 600;
 		font-size: 11px;
@@ -583,6 +582,18 @@ font-family: 'Raleway';
 
 .team-item {
 	width: calc(100% - 60px) / 3;
+}
+
+.team-icon-container {
+	display: flex;
+	margin-bottom: 44px;
+}
+
+.team-text-icon {
+	margin-right: 20px;
+	width: 60px;
+	height: 1px;
+	fill: var(--black-color);
 }
 
 .team-text {
