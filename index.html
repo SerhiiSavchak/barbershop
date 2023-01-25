@@ -16,54 +16,70 @@
     <title>Barbershop</title>
   </head>
   <body>
-
     <!-- Header -->
-	    	
-				
-	    		<header class="page-header">
-			        <nav class="site-nav">
-			          <ul class="nav-list list">
-			            <li class="nav-item"><a class="nav-link link">About</a></li>
-			            <li class="nav-item">
-			              <a class="nav-link link">Services and prices</a>
-			            </li>
-			            <li class="nav-item"><a class="nav-link link">Barbers</a></li>
-			            <li class="nav-item"><a class="nav-link link">Contacts</a></li>
-			          </ul>
-			        </nav>
-			        <div class="contact-header">
-			          <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-			          <button class="header-button" type="button">Online-booking</button>
-			    </header>
-			
-			    <!-- Main -->
-			
-			    <main>
-			      <!-- Section hero -->
-			      <section class="hero-section">
-			       	<div class="hero-text-container">
-			       		 <p class="hero-top-text">A hair salon for men in Kyiv</p>
-					        <h1 class="hero-title title">BarberShop</h1>
-					        <p class="hero-bottom-text">
-					          We are experts in trendy men’s haircuts. We work quickly, carefully
-					          and with style.
-					        </p>
-							  <div class="social-container">
-			         	 <ul class="social-list list">
-								<a class="logo-link link">
-					            <svg class="icon-logo">
-					              <use href="./images/sprite/sprite.svg#icon-logo"></use></svg
-					          ></a>
-				            <li class="hero-social-item">
-				              <a class="hero-social-link link">Instagram</a>
-				            </li>
-				            <li class="hero-social-item">
-				              <a class="hero-social-link link">Youtube</a>
-				            </li>
-				          </ul>
-			         </div>
-			      </section>
 
+    <header class="page-header">
+      <div class="container header">
+        <nav class="site-nav">
+          <a class="logo-link link">
+            <svg class="icon-logo">
+              <use href="./images/sprite/sprite.svg#icon-logo"></use></svg
+          ></a>
+          <ul class="nav-list list">
+            <li class="nav-item"><a class="nav-link link">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link link">Services and prices</a>
+            </li>
+            <li class="nav-item"><a class="nav-link link">Barbers</a></li>
+            <li class="nav-item"><a class="nav-link link">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="contact-header">
+          <a class="tel-link link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="header-button" type="button">Online-booking</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <!-- Section hero -->
+      <section class="hero-section">
+        <div class="container hero">
+          <!-- Social -->
+          <div class="social-container">
+            <div class="social-icon-container">
+              <svg class="social-text-icon">
+                <use href="./images/sprite/sprite.svg#icon-strip"></use>
+              </svg>
+              <ul class="social-list list">
+                <li class="hero-social-item">
+                  <a class="hero-social-link link">Instagram</a>
+                </li>
+                <li class="hero-social-item">
+                  <a class="hero-social-link link">Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="hero-text-container">
+            <div class="hero-icon-container">
+              <svg class="hero-text-icon">
+                <use href="./images/sprite/sprite.svg#icon-strip"></use>
+              </svg>
+              <p class="hero-top-text">A hair salon for men in Kyiv</p>
+            </div>
+            <h1 class="hero-title title">BarberShop</h1>
+            <p class="hero-bottom-text">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Section about -->
       <section class="about-section section">
@@ -207,12 +223,12 @@
       <!-- Section team -->
       <section class="team-section section">
         <div class="container">
-			<div class="team-icon-container">
+          <div class="team-icon-container">
             <svg class="team-text-icon">
               <use href="./images/sprite/sprite.svg#icon-strip"></use>
             </svg>
-          <p class="team-top-text">For true enjoyers of the atmosphere</p>
-			</div>
+            <p class="team-top-text">For true enjoyers of the atmosphere</p>
+          </div>
           <h2 class="team-title title">Our barbers</h2>
           <ul class="team-list list">
             <li class="team-item">
@@ -415,39 +431,63 @@
       <section class="connection-section">
         <div class="booking-contacts">
           <div class="booking-container">
-				<h2 class="booking-title title">Online-booking</h2>
-           <form class="form-booking">
-				<div class="name-tel-container">
-					<label class="label visually-hidden" for="user-name">Name</label>
-					<input class="input" type="text" name="name" id="user-name" placeholder="name*">
-	
-					<label class="label visually-hidden" for="user-tel">Phone</label>
-					<input class="input" type="tel" name="tel" id="user-tel" placeholder="phone*">
+            <h2 class="booking-title title">Online-booking</h2>
+            <form class="form-booking">
+              <div class="name-tel-container">
+                <label class="label visually-hidden" for="user-name"
+                  >Name</label
+                >
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  id="user-name"
+                  placeholder="name*"
+                />
 
-				</div>
-				<textarea class="textarea" name="message" id="user-message" placeholder="Message"></textarea>
-   			<label class="label visually-hidden" for="user-message">Message</label>
+                <label class="label visually-hidden" for="user-tel"
+                  >Phone</label
+                >
+                <input
+                  class="input"
+                  type="tel"
+                  name="tel"
+                  id="user-tel"
+                  placeholder="phone*"
+                />
+              </div>
+              <textarea
+                class="textarea"
+                name="message"
+                id="user-message"
+                placeholder="Message"
+              ></textarea>
+              <label class="label visually-hidden" for="user-message"
+                >Message</label
+              >
 
-	            <button class="booking-button" type="submit">send</button>
-           </form>
+              <button class="booking-button" type="submit">send</button>
+            </form>
           </div>
 
-			 <!-- Contancts -->
+          <!-- Contancts -->
           <div class="contacts-container">
             <h2 class="contacts-title title">Contacts</h2>
             <address>
               <ul class="contacts-list list">
                 <li class="contacts-item">
-						<a  class="contacts-link address link"
-                  href="https://goo.gl/maps/dYYXKewHgFiKYTAw5"
-                  target="_blank">
-<svg class="contacts-icon">
-              <use href="./images/sprite/sprite.svg#icon-map">
-				  </use>
-				  </svg
-             >st. Vasilkivska, 7A <br />
-             Kyiv, 08132
-						</a>
+                  <a
+                    class="contacts-link address link"
+                    href="https://goo.gl/maps/dYYXKewHgFiKYTAw5"
+                    target="_blank"
+                  >
+                    <svg class="contacts-icon">
+                      <use
+                        href="./images/sprite/sprite.svg#icon-map"
+                      ></use></svg
+                    >st. Vasilkivska, 7A <br />
+                    Kyiv, 08132
+                  </a>
                 </li>
                 <li class="contacts-item phone">
                   <a class="contacts-link link" href="tel:+380441111111"
@@ -486,19 +526,19 @@
     <!-- Footer -->
     <footer class="page-footer">
       <p class="footer-text">&copy; Copyright 2020</p>
-		<div class="footer-icon-container">
-		<svg class="footer-text-icon">
-	              <use href="./images/sprite/sprite.svg#icon-strip"></use>
-	            </svg>
-      <ul class="footer-list list">
+      <div class="footer-icon-container">
+        <svg class="footer-text-icon">
+          <use href="./images/sprite/sprite.svg#icon-strip"></use>
+        </svg>
+        <ul class="footer-list list">
           <li class="footer-item">
             <a class="footer-link link" target="_blank" href="">Instagram</a>
           </li>
           <li class="footer-item">
             <a class="footer-link link" target="_blank" href="">Youtube</a>
           </li>
-      </ul>
-		</div>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
