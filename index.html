@@ -393,9 +393,9 @@
       </section>
 
       <!-- Section booking -->
-      <section class="connection-section">
-        <div class="booking-contacts">
-          <div class="booking-container">
+      <div class="booking-contacts-container">
+        <div class="container">
+          <section class="booking-section">
             <h2 class="booking-title title">Online-booking</h2>
             <form class="form-booking">
               <div class="name-tel-container">
@@ -433,44 +433,40 @@
 
               <button class="booking-button" type="submit">send</button>
             </form>
-          </div>
+          </section>
 
-          <!-- Contancts -->
-          <div class="contacts-container">
+          <!-- Contacts -->
+          <section class="contacts-section">
             <h2 class="contacts-title title">Contacts</h2>
-            <address>
+            <address class="contacts-address">
               <ul class="contacts-list list">
                 <li class="contacts-item">
+                  <svg class="contacts-icon">
+                    <use href="./images/sprite/sprite.svg#icon-map"></use>
+                  </svg>
                   <a
-                    class="contacts-link address link"
+                    class="contacts-link link"
                     href="https://goo.gl/maps/dYYXKewHgFiKYTAw5"
                     target="_blank"
-                  >
-                    <svg class="contacts-icon">
-                      <use
-                        href="./images/sprite/sprite.svg#icon-map"
-                      ></use></svg
                     >st. Vasilkivska, 7A <br />
                     Kyiv, 08132
                   </a>
                 </li>
                 <li class="contacts-item phone">
+                  <svg class="contacts-icon">
+                    <use href="./images/sprite/sprite.svg#icon-phone"></use>
+                  </svg>
                   <a class="contacts-link link" href="tel:+380441111111"
-                    ><svg class="contacts-icon">
-                      <use
-                        href="./images/sprite/sprite.svg#icon-phone"
-                      ></use></svg
                     >+38 044 111 11 11</a
                   >
                 </li>
                 <li class="contacts-item email">
+                  <svg class="contacts-icon">
+                    <use href="./images/sprite/sprite.svg#icon-mail"></use>
+                  </svg>
                   <a
                     class="contacts-link link email"
                     href="mailto:barbershop@email.com"
-                    ><svg class="contacts-icon">
-                      <use
-                        href="./images/sprite/sprite.svg#icon-mail"
-                      ></use></svg
                     >barbershop@email.com</a
                   >
                 </li>
@@ -478,9 +474,9 @@
             </address>
             <p class="contacts-top-text">Working hours</p>
             <p class="contacts-bottom-text">Every day from 9:00 to 22:00</p>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- Footer -->

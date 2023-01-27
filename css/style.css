@@ -347,8 +347,9 @@ color: var(--secondary-black-color);
 	background-image: url(../images/prices/prices-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-right: auto;
-	margin-left: auto;
+	margin:0 auto;
+	height: auto;
+	max-width: 1600px;
 	
 }
 
@@ -683,22 +684,42 @@ margin-right: 30px;
 /* Section booking */
 
 
-.booking-contacts {
-display: flex;
-height: 634px;
-}
 
-.booking-container {
-	padding-top: 130px;
-	padding-left: 215px;
-
+.booking-contacts-container {
+	max-width: 1600px;
+	margin: 0 auto;
+	height: auto;
 	background-color: var(--booking-bg-color);
-	width: 50%;
+background-image: url(../images/contacts/contacts-bg-image.png);
+background-size: calc(50% - 15px) 100%;
+background-repeat: no-repeat;
+background-position: right;
+
+
 }
+
+.booking-contacts-container>.container {
+	display: flex;
+}
+
+.booking-section {
+	
+	padding-top: 130px;
+	padding-bottom: 120px ;
+width: calc(50% + 15px);
+
+}
+
+.contacts-section {
+	padding: 130px 0 120px 100px;
+width: calc(50% - 15px);
+
+}
+
+
 
 .booking-title{
 	margin-bottom: 44px;
-	margin-right: 260px;
 		max-width: 430px;
 		color: var(--white-color);
 }
@@ -730,6 +751,10 @@ display: flex;
 flex-direction: column;
 }
 
+.name-tel-container{
+	display: flex;
+}
+
 .input {
 	width: 270px;
 	outline: transparent;
@@ -741,6 +766,20 @@ flex-direction: column;
 background-color: transparent;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:hover,
+.input:focus,
+.textarea:hover,
+.textarea:focus,
+.textarea:hover::placeholder,
+.textarea:focus::placeholder,
+ .input:hover::placeholder,
+ .input:focus::placeholder{
+color: var(--white-color);
+border-color: var(--white-color);
 }
 
 .input::placeholder {
@@ -769,6 +808,8 @@ font-weight: 600;
 		border-left: transparent;
 		border-right: transparent;
 		background-color: transparent;
+		transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+				color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea::placeholder {
@@ -786,14 +827,8 @@ margin-bottom: 44px;
 
 }
 
-.contacts-container {
-	padding-left: 100px;
-	padding-top: 130px;
-	width: 50%;
-	background-image:linear-gradient(to right, rgba(0,1, 0.8), rgba(46, 47, 66, 0.8)), url(../images/contacts/contacts-bg-image.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	
+.contacts-address {
+	margin-bottom: 70px;
 }
 
 .contacts-item:not(:last-child) {
@@ -806,31 +841,32 @@ margin-bottom: 44px;
 		color: var(--white-color);
 }
 
-.contacts-link.address {
+ .contacts-item:first-child>.contacts-link {
 	font-weight: 700;
-	font-size: 18px;
-	line-height: 1.67;
-	letter-spacing: 0.02em;
 	color: var(--grey-color);
 }
 
 
 .contacts-icon {
+	fill: transparent;
 margin-right: 16px;
 width: 24px;
 	height: 24px;
 }
 
+.contacts-item {
+	display: flex;
+
+}
+.contacts-item:not(:first-child) {
+	align-items: center;
+}
 
 .contacts-link {
-	display: flex;
 		font-size: 18px;
 			line-height: 1.67;
 			letter-spacing: 0.02em;
-			color: var(--grey-color)
-}
-.contacts-item:last-child{
-	margin-bottom: 70px;
+			color: var(--grey-color);
 }
 
 .contacts-link.email {
@@ -838,6 +874,7 @@ width: 24px;
 }
 
 .contacts-top-text {
+	margin-bottom: 20px;
 	display: flex;
 		align-items: center;
 font-weight: 600;
@@ -863,17 +900,7 @@ font-weight: 600;
 	align-items: center;
 }
 
-.footer-icon-container {
-	display: flex;
-	align-items: center;
-}
 
-.footer-text-icon {
-	margin-right: 40px;
-	width: 60px;
-	height: 1px;
-	fill: var(--black-color);
-}
 
 .footer-text {
 font-weight: 600;
