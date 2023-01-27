@@ -28,8 +28,13 @@ h1,h2,h3,h4,p {
 }
 
 .page-header {
-	background-color: #555555;
+	width: 100%;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background-color: transparent;
+	position: absolute;
 	align-items: center;
+	
 
 }
 
@@ -99,7 +104,6 @@ padding-bottom: 120px;
 .logo-link {
 	margin-right: 131px;
 fill:var(--black-color);
-padding: 32px 0;
 }
 
 .site-nav {
@@ -178,14 +182,18 @@ text-transform: uppercase;
 /* Social section */
 
 .social-container {
-	position: relative;
+	padding-left: 27px;
+	padding-bottom: 40px;
+display: flex;
+align-items: flex-end;
+width: 100px;
 }
 
 .social-list{
-	position: absolute;
 	display: flex;
 		align-items: center;
-		transform: rotate(-90deg);
+		transform: rotate(-90deg) translateY(100%);
+		transform-origin: bottom left;
 }
 
 .social-list::before,
@@ -207,6 +215,9 @@ margin-right: 20px;
 	background-color: var(--white-color);
 }
 
+.hero-social-item:not(:last-child) {
+	margin-right: 40px;
+}
 
 .hero-social-link {
 	font-weight: 600;
@@ -230,10 +241,9 @@ margin-right: 20px;
 }
 
 .hero-text-container {
-	background-image: url(../images/hero/hero.jpg);
+	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero.jpg);
 	width: 1070px;
-	height: auto;
-	padding: 272px 0 208px 100px;
+	padding: 252px 100px 208px;
 }
 
 
