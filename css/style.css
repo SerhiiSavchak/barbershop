@@ -357,9 +357,11 @@ color: var(--secondary-black-color);
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 44px;
+	gap:30px;
 }
 
 .prices-top-text {
+	margin-bottom: 20px;
 	display: flex;
 	align-items: center;
 	font-weight: 600;
@@ -379,15 +381,11 @@ color: var(--secondary-black-color);
 	width: calc((100% - 30px) / 2);
 }
 
-.prices-list.first {
+.prices-list:first-child {
 	background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
-.prices-list.second {
+.prices-list:last-child {
 background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
-.prices-list:not(:last-child) {
-	margin-right: 30px;
 }
 
 .prices-text {
@@ -398,9 +396,23 @@ background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 		color: var(--grey-color);
 }
 
+.prices-text:first-child {
+	order: -1;
+}
+
 .prices-item {
 display: flex;
 	justify-content: space-between;
+	align-items: baseline;
+}
+
+.prices-item::before {
+content: "";
+flex-grow: 1;
+height: 1px;
+background-color:rgba(157, 164, 189, 0.12);
+margin: 0 12px;
+
 }
 
 .prices-item:not(:last-child) {
@@ -523,6 +535,7 @@ font-weight: 600;
 	line-height: 1.3;
 color: var(--accent-color);
 }
+
 
 .benefits-plus.first {
 top: 27px;
@@ -894,13 +907,20 @@ font-weight: 600;
 /* Section Footer */
 
 .page-footer {
-	justify-content: space-between;
-	padding:56px 200px;
+	padding:56px 215px;
+}
+
+.page-footer>.container {
 	display: flex;
 	align-items: center;
+		justify-content: space-between;
 }
 
 
+.footer-list::before,
+.social-list::before {
+	margin-right: 40px;
+}
 
 .footer-text {
 font-weight: 600;
