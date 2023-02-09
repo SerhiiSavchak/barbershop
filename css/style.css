@@ -138,6 +138,7 @@ fill:var(--black-color);
 
 .contact-header {
 	margin-left: auto;
+	margin-right: 17px;
 	display: flex;
 	align-items: center;
 }
