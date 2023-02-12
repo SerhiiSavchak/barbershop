@@ -1,0 +1,43 @@
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.link {
+	cursor: pointer;
+	text-decoration: none;
+	font-style: normal;
+}
+
+.list {
+	list-style: none;
+}
+
+.container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.title {
+	font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1.16;
+		letter-spacing: 0.05em;
+}
