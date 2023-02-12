@@ -282,7 +282,7 @@ margin-right: 20px;
 
 /* Section about */
 
-.container.about {
+.about-container {
 	display: flex;
 }
 
@@ -363,7 +363,7 @@ color: var(--secondary-black-color);
 	
 }
 
-.prices-container {
+.prices-wrap {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 44px;
@@ -456,7 +456,7 @@ margin: 0 12px;
 
 /* Section benefits */
 
-.container.benefits {
+.benefits-container {
 display: flex;
 padding: 85px;
 }
@@ -708,7 +708,7 @@ margin-right: 30px;
 
 
 
-.booking-contacts-container {
+.booking-contacts-wrap {
 	max-width: 1600px;
 	margin: 0 auto;
 	height: auto;
@@ -721,7 +721,7 @@ background-position: right;
 
 }
 
-.booking-contacts-container>.container {
+.booking-contacts-wrap>.container {
 	display: flex;
 }
 
