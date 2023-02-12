@@ -44,13 +44,36 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 428px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+  }
+}
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -62,4 +85,32 @@ img {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+}
+
+.header-container {
+  align-items: center;
+  display: flex;
+}
+
+.icon-logo {
+  width: 69px;
+  height: 55px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 40px;
+  }
+  .nav-container {
+    display: none;
+  }
+  .contact-header-container {
+    display: none;
+  }
+  .icon-burger {
+    fill: white;
+    outline: 2px solid black;
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */

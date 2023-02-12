@@ -1,9 +1,13 @@
 .page-header {
+
 }
+
 .header-container {
+	align-items: center;
+	display: flex;
+
 }
-.container {
-}
+
 .nav-container {
 }
 .logo-link {
@@ -11,6 +15,8 @@
 .link {
 }
 .icon-logo {
+width: 69px;
+height: 55px;
 }
 .nav-list {
 }
@@ -25,4 +31,33 @@
 .tel-link {
 }
 .header-button {
+}
+
+
+@media screen and (max-width:767px) {
+	.page-header {
+		padding-top: 40px;
+	}
+.nav-container {
+	display: none;
+}
+.contact-header-container {
+display: none;
+}
+.icon-burger {
+fill: $white-color;
+outline: 2px solid black;
+width: 40px;
+height: 40px;
+}
+}
+
+@media screen and (min-width:768px) {
+	
+}
+@media screen and (max-width:1199px) {
+	
+}
+@media screen and (min-width:1200px) {
+	
 }
