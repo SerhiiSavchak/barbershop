@@ -30,9 +30,14 @@
  
 }
 
+.section {
+	padding:84px 0;
+}
+
+
 @media screen and (max-width: 767px) {
  .container {
-	 max-width: 428px;
+	 max-width: 480px;
 	 	margin-right: auto;
 	margin-left: auto;
 	padding:0 15px;
@@ -41,11 +46,14 @@
 
 @media screen and (min-width:768px) and (max-width:1199px) {
 .container {
-	 width: 768px;
+	 width: 690px;
 	 	margin-right: auto;
 	margin-left: auto;
 	padding:0 15px;
  }
+ .section {
+	padding:100px 0;
+}
 }
 
 
@@ -56,11 +64,11 @@
 	margin-left: auto;
 	padding:0 15px;
  }	
-}
-
 .section {
 padding-top: 120px;
 padding-bottom: 120px;
+}
+
 }
 
 .title {

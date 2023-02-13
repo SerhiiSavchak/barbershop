@@ -1,0 +1,125 @@
+
+.hero-section {
+ max-width: 1440px;
+}
+.hero-top-text {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+	color: $secondary-grey-color;
+&::before {
+	margin-right: 20px;
+	display: block;
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color:$secondary-grey-color;
+}
+}
+
+.hero-title {
+font-weight: 700;
+font-size: 48px;
+line-height: 1.16;
+letter-spacing: 0.05em;
+color: $white-color;
+margin-top: 20px;
+}
+.hero-bottom-text {
+	margin-top: 20px;
+font-size: 16px;
+line-height: 1.62;
+letter-spacing: 0.02em;
+color: $grey-color;
+}
+
+
+@media screen and (max-width: 767px) {
+	.hero-section {
+		background-image:linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(/images/hero/hero-mobile480px.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-top: 208px;
+ padding-bottom: 208px;
+	}
+	.hero-social-container {
+	display: none;	
+	}
+	.hero-bottom-text {
+		max-width: 321px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.hero-social-container {
+	padding-left: 27px;
+	padding-bottom: 40px;
+display: flex;
+align-items: flex-end;
+width: 100px;
+background-color: $white-color;
+	}
+	.hero-container {
+		display: flex;
+	}
+	.hero-social-list{
+	display: flex;
+		align-items: center;
+		transform: rotate(-90deg) translateY(100%);
+		transform-origin: bottom left;
+		gap: 40px;
+&::before {
+	margin-right: 20px;
+	display: block;
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: $black-color;
+}
+}
+
+.hero-social-link {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+	color: $black-color;
+	transition: color 250ms $animation-cubic;
+	&:hover,
+	&:focus {
+ color: $accent-color;
+	}
+}
+.hero-text-container {
+	padding-left: 98px;
+	padding-top: 272px;
+		padding-bottom: 237px;
+	background-image:linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),url(/images/hero/hero-tablet-573px.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+width: 573px;
+	
+}
+.hero-bottom-text {
+	width: 360px;
+	font-size: 18px;
+line-height: 1.66;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+	.hero-text-container {
+	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero.jpg);
+	width: 1070px;
+	padding: 252px 100px 208px;
+}
+.hero-title {
+font-size: 72px;
+line-height: 1.18;
+}
+}
