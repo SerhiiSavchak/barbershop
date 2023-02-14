@@ -848,9 +848,124 @@ img {
   }
   .benefits-list {
     width: 370px;
+    margin-left: 69px;
   }
   .benefits-item {
     width: 170px;
     padding: 20px 24px;
+  }
+}
+.section-team {
+  background-color: #F7F7F7;
+}
+
+.team-top-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+  text-transform: uppercase;
+  color: #303030;
+}
+.team-top-text::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.team-title {
+  margin-bottom: 44px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  max-width: 430px;
+  color: #303030;
+}
+
+.team-thumb {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.team-subtitle {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.team-text {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: #FF6C00;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-item {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #303030;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.social-item:hover .social-icon,
+.social-team:focus .social-icon {
+  fill: #FF6C00;
+}
+
+.social-icon {
+  fill: #303030;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    width: 450px;
+  }
+  .team-wrap {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    gap: 30px;
+  }
+  .team-item {
+    width: calc((100% - 60px) / 3);
   }
 }/*# sourceMappingURL=main.css.map */

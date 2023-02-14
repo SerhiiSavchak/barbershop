@@ -1,0 +1,119 @@
+.section-team {
+	background-color: $bg-grey-color;
+
+}
+.team-container {
+}
+.team-top-text {
+display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	font-weight: 600;
+		font-size: 11px;
+		line-height: 1.36px;
+		text-transform: uppercase;
+		color: $black-color;
+	&::before {
+	margin-right: 20px;
+	display: block;
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: $black-color;
+	}
+}
+.team-title {
+	margin-bottom: 44px;
+font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.16;
+	letter-spacing: 0.05em;
+	max-width: 430px;
+	color: $black-color;
+}
+
+.team-photo {
+}
+.team-thumb {
+	text-align: center;
+padding-top: 30px;
+}
+.team-subtitle {
+margin-bottom: 8px;
+	font-size: 18px;
+	line-height: 1.38;
+	letter-spacing: 0.02em;
+	color: $black-color;
+}
+.team-text {
+margin-bottom: 30px;
+	font-size: 14px;
+   line-height: 1.35;
+   letter-spacing: 0.02em;
+	color: $accent-color;
+}
+.team-social-list {
+display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.social-item {
+padding: 20px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	color: $black-color;
+	background-color: $white-color;
+	border-radius: 50%;
+}
+.social-item:hover .social-icon,
+.social-team:focus .social-icon {
+fill: $accent-color;
+}
+.social-team-link {
+}
+.social-icon {
+fill: $black-color;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+width: 20px;
+height: 20px;
+}
+
+@media screen and (max-width:767px) {
+.team-list {
+	margin: 0 auto;
+}
+}
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+.team-list {
+	width: 450px;
+}
+.team-wrap {
+	width: 450px;
+	margin: 0 auto;
+}
+}
+@media screen and (max-width: 1199px) {
+.team-item {
+	&:not(:last-child) {
+		margin-bottom: 64px;
+	}
+}
+}
+@media screen and (min-width:1200px) {
+	.team-list {
+	display: flex;
+	gap: 30px;
+}
+.team-item {
+	width:calc((100% - 60px) / 3);
+}
+}
