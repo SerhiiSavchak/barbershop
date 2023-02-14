@@ -968,4 +968,53 @@ img {
   .team-item {
     width: calc((100% - 60px) / 3);
   }
+}
+.gallery-text {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+  text-transform: uppercase;
+  color: #303030;
+}
+.gallery-text::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-text {
+    margin-bottom: 71px;
+  }
+  .gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-text {
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+  }
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-list {
+    display: flex;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
