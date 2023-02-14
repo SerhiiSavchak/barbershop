@@ -21,6 +21,7 @@ margin-right: 20px;
 }
 
 .about-title {
+font-family: Raleway;
 	margin-bottom: 20px;
 font-weight: 700;
 font-size: 28px;
@@ -87,10 +88,6 @@ height: auto;
 	width: calc((100% - 30px) / 2);
 }
 
-.about-item:not(:last-child) {
-	margin-bottom: 30px;
-}
-
 .about-text-container {
 	width: calc((100% - 30px) / 2);
 }
@@ -103,6 +100,12 @@ max-width: 330px;
 .about-bottom-text {
 	margin-bottom: 77px;
 	max-width: 330px;
+}
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+	.about-item:not(:last-child) {
+	margin-bottom: 30px;
 }
 }
 

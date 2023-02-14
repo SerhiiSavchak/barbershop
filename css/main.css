@@ -291,7 +291,20 @@ img {
     margin-top: 64px;
   }
   .menu-social-item:not(:last-child) {
+    display: flex;
+    align-items: center;
     margin-bottom: 24px;
+  }
+  .menu-social-item:not(:last-child)::before {
+    margin-right: 20px;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+  }
+  .menu-social-item:last-child {
+    margin-left: 80px;
   }
   .menu-social-link {
     font-weight: 600;
@@ -333,6 +346,7 @@ img {
 }
 
 .hero-title {
+  font-family: Raleway;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.16;
@@ -448,6 +462,7 @@ img {
 }
 
 .about-title {
+  font-family: Raleway;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 28px;
@@ -505,9 +520,6 @@ img {
   .about-list {
     width: calc((100% - 30px) / 2);
   }
-  .about-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
   .about-text-container {
     width: calc((100% - 30px) / 2);
   }
@@ -519,6 +531,11 @@ img {
   .about-bottom-text {
     margin-bottom: 77px;
     max-width: 330px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -538,5 +555,302 @@ img {
   .about-bottom-text {
     max-width: 470px;
     margin-bottom: 42px;
+  }
+}
+.prices-section {
+  background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%), url(/images/prices/prices-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  height: auto;
+  max-width: 1440px;
+}
+
+.prices-top-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-top-text::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  font-family: Raleway;
+  margin-bottom: 44px;
+  margin-right: auto;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+.prices-wrap {
+  margin-bottom: 44px;
+  display: flex;
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.prices-item::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  margin: 0 12px;
+}
+
+.prices-text {
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+.prices-text:first-child {
+  order: -1;
+}
+
+.prices-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.09em;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.prices-button:hover, .prices-button:focus {
+  background-color: #FF6C00;
+}
+
+@media screen and (max-width: 767px) {
+  .prices-title {
+    max-width: 418px;
+    font-size: 40px;
+    line-height: 1.175;
+  }
+  .prices-text {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+  .prices-wrap {
+    padding: 30px 20px 30px 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices-title {
+    font-size: 42px;
+    line-height: 1.1666666667;
+  }
+  .prices-text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .prices-wrap {
+    padding: 32px 40px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .prices-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .prices-wrap {
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices-section {
+    background-image: url(/images/prices/prices-bg-desctop.jpg);
+    max-width: 1600px;
+  }
+  .prices-wrap {
+    justify-content: space-between;
+    margin-bottom: 44px;
+    gap: 30px;
+  }
+  .prices-list {
+    padding: 30px 22px 30px 20px;
+    width: calc((100% - 30px) / 2);
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+  .prices-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.benefits-list {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-container {
+  display: flex;
+}
+
+.benefits-item {
+  position: relative;
+  height: 133px;
+  background-color: #F7F7F7;
+}
+.benefits-item > span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  display: block;
+  text-align: center;
+  margin-bottom: 6px;
+  color: #303030;
+}
+.benefits-item > .benefits-plus {
+  position: absolute;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #FF6C00;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.benefits-plus.first {
+  top: 27px;
+  right: 35px;
+}
+.benefits-plus.second {
+  top: 25px;
+  right: 48px;
+}
+.benefits-plus.third {
+  top: 25px;
+  right: 48px;
+}
+.benefits-plus.fourth {
+  top: 25px;
+  right: 35px;
+}
+
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+
+.benefits-top-text {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  text-transform: uppercase;
+  color: #303030;
+}
+.benefits-top-text::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.benefits-title {
+  font-family: Raleway;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.benefits-bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-item {
+    padding: 20px 36px;
+    width: calc((100% - 30px) / 2);
+  }
+  .benefits-bottom-text {
+    max-width: 418px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    width: 210px;
+    padding: 20px 44px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .benefits-container {
+    flex-direction: column-reverse;
+  }
+  .benefits-text-container {
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-list {
+    justify-content: flex-end;
+  }
+  .benefits-title {
+    max-width: 449px;
+  }
+  .benefits-bottom-text {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-text-container {
+    margin-left: 130px;
+  }
+  .benefits-title {
+    max-width: 430px;
+  }
+  .benefits-bottom-text {
+    max-width: 500px;
+  }
+  .benefits-list {
+    width: 370px;
+  }
+  .benefits-item {
+    width: 170px;
+    padding: 20px 24px;
   }
 }/*# sourceMappingURL=main.css.map */
