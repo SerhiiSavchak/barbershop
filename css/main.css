@@ -558,7 +558,8 @@ img {
   }
 }
 .prices-section {
-  background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%), url(/images/prices/prices-bg-mobile.jpg);
+  background-color: #111319;
+  background-image: linear-gradient(to bottom, #171A24 70%, rgba(157, 164, 189, 0.6) 100%), url(/images/prices/prices-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -1017,4 +1018,12 @@ img {
     display: flex;
     gap: 30px;
   }
+}
+.booking-section {
+  background-color: #191C26;
+}
+
+.contacts-section {
+  background-color: #191C26;
+  background-image: url(../images/contacts/contacts-bg-image.png);
 }/*# sourceMappingURL=main.css.map */
