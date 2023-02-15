@@ -146,7 +146,7 @@
                 />
                 <img
                   class="about-image"
-                  src="./images/about/about-2-mobile.jpg"
+                  src="./images/about/about-2-tablet.jpg"
                   alt="head haircut"
                   width="330"
                   height="235"
@@ -562,7 +562,8 @@
                   id="user-name"
                   name="name"
                   type="text"
-                  placeholder="name*"
+                  placeholder="name"
+                  required
                 />
 
                 <label class="label visually-hidden" for="user-tel"
@@ -573,7 +574,8 @@
                   id="user-tel"
                   name="tel"
                   type="tel"
-                  placeholder="phone*"
+                  placeholder="phone"
+                  required
                 />
               </div>
               <textarea
@@ -594,42 +596,45 @@
 
           <section class="contacts-section">
             <h2 class="contacts-title title">Contacts</h2>
-            <address class="contacts-address">
-              <ul class="contacts-list list">
-                <li class="contacts-item">
-                  <svg class="contacts-icon">
-                    <use href="./images/sprite/sprite.svg#icon-map"></use>
-                  </svg>
-                  <a
-                    class="contacts-link link"
-                    href="https://goo.gl/maps/dYYXKewHgFiKYTAw5"
-                    target="_blank"
-                    >st. Vasilkivska, 7A <br />
-                    Kyiv, 08132
-                  </a>
-                </li>
-                <li class="contacts-item phone">
-                  <svg class="contacts-icon">
-                    <use href="./images/sprite/sprite.svg#icon-phone"></use>
-                  </svg>
-                  <a class="contacts-link link" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
-                  >
-                </li>
-                <li class="contacts-item email">
-                  <svg class="contacts-icon">
-                    <use href="./images/sprite/sprite.svg#icon-mail"></use>
-                  </svg>
-                  <a
-                    class="contacts-link link email"
-                    href="mailto:barbershop@email.com"
-                    >barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <p class="contacts-top-text">Working hours</p>
-            <p class="contacts-bottom-text">Every day from 9:00 to 22:00</p>
+            <div class="contacts-wrap">
+              <address class="contacts-address">
+                <ul class="contacts-list list">
+                  <li class="contacts-item">
+                    <svg class="contacts-icon">
+                      <use href="./images/sprite/sprite.svg#icon-map"></use>
+                    </svg>
+                    <a
+                      class="contacts-link link"
+                      href="https://goo.gl/maps/dYYXKewHgFiKYTAw5"
+                      target="_blank"
+                      >st. Vasilkivska, 7A Kyiv, 08132
+                    </a>
+                  </li>
+                  <li class="contacts-item phone">
+                    <svg class="contacts-icon">
+                      <use href="./images/sprite/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <a class="contacts-link link" href="tel:+380441111111"
+                      >+38 044 111 11 11</a
+                    >
+                  </li>
+                  <li class="contacts-item email">
+                    <svg class="contacts-icon">
+                      <use href="./images/sprite/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <a
+                      class="contacts-link link email"
+                      href="mailto:barbershop@email.com"
+                      >barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <div class="contacts-text-wrap">
+                <p class="contacts-top-text">Working hours</p>
+                <p class="contacts-bottom-text">Every day from 9:00 to 22:00</p>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -637,8 +642,8 @@
 
     <!-- Footer -->
 
-    <!-- <footer class="page-footer">
-      <div class="container">
+    <footer class="page-footer">
+      <div class="footer-container container">
         <p class="footer-text">&copy; Copyright 2020</p>
         <ul class="footer-list list">
           <li class="footer-item">
@@ -649,7 +654,7 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="./js/mobile-menu.js"></script>
   </body>
