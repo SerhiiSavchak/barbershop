@@ -1,43 +1,21 @@
 .page-header {
 	position: absolute;
 	width: 100%;
-
 }
 
 .header-container {
 	align-items: center;
 	display: flex;
-	
-
-}
-
-.nav-container {
 }
 
 .logo-link {
 	fill: $black-color;
 }
 
-
 .icon-logo {
 width: 69px;
 height: 55px;
 }
-.nav-list {
-}
-
-
-.nav-item {
-}
-.nav-link {
-}
-.contact-header-container {
-}
-.tel-link {
-}
-.header-button {
-}
-
 
 @media screen and (max-width:767px) {
 	.page-header {
@@ -67,7 +45,6 @@ fill: $white-color;
 height: 40px;
 }
 }
-
 
 @media screen and (min-width:768px) {
 .menu-burger-btn {
@@ -105,12 +82,10 @@ color: $white-color;
 .page-header {
 	padding-top: 32px;
 }
-
 .contact-header-container {
 	margin-left: auto;
 	display: flex;
 	align-items: center;
-
 }
 .header-button {
 	color: $white-color;
@@ -138,8 +113,8 @@ color: $white-color;
 	flex-direction: column-reverse;
 	gap: 20px;
 }
-
 }
+
 @media screen and (min-width:1200px) {
 .page-header {
 	padding-top: 52px;

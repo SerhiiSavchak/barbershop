@@ -2,8 +2,6 @@
 	background-color: $bg-grey-color;
 
 }
-.team-container {
-}
 .team-top-text {
 display: flex;
 	align-items: center;
@@ -33,8 +31,6 @@ font-family: 'Raleway';
 	color: $black-color;
 }
 
-.team-photo {
-}
 .team-thumb {
 	text-align: center;
 padding-top: 30px;
@@ -73,8 +69,6 @@ padding: 20px;
 .social-item:hover .social-icon,
 .social-team:focus .social-icon {
 fill: $accent-color;
-}
-.social-team-link {
 }
 .social-icon {
 fill: $black-color;

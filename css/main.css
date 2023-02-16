@@ -323,10 +323,6 @@ img {
     display: none;
   }
 }
-.hero-section {
-  max-width: 1440px;
-}
-
 .hero-top-text {
   display: flex;
   align-items: center;
@@ -424,7 +420,6 @@ img {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(/images/hero/hero-tablet-573px.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 573px;
   }
   .hero-bottom-text {
     width: 360px;
@@ -432,10 +427,14 @@ img {
     line-height: 1.66;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero-text-container {
+    width: 1070px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-text-container {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero.jpg);
-    width: 1070px;
     padding: 252px 100px 208px;
   }
   .hero-title {
@@ -1120,6 +1119,11 @@ img {
   gap: 20px;
 }
 
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+
 .contacts-item:first-child > .contacts-link {
   font-weight: 700;
   font-size: 18px;
@@ -1130,7 +1134,7 @@ img {
 
 .contacts-icon {
   fill: transparent;
-  margin-right: 16px;
+  margin-right: 20px;
   width: 24px;
   height: 24px;
 }
@@ -1213,10 +1217,10 @@ img {
     padding-top: 84px;
     padding-bottom: 84px;
   }
-  .bo .booking-title {
+  .booking-title {
     max-width: 418px;
   }
-  .bo .booking-title .input {
+  .booking-title .input {
     width: 100%;
   }
   .form-booking {
@@ -1229,6 +1233,9 @@ img {
   }
   .contacts-address {
     margin-bottom: 44px;
+  }
+  .contacts-br {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1296,7 +1303,7 @@ img {
     width: 270px;
   }
   .contacts-section {
-    padding: 130px 0 120px 100px;
+    padding: 130px 0 120px 115px;
     width: calc(50% - 15px);
   }
   .contacts-address {
@@ -1328,9 +1335,6 @@ img {
   background-color: #303030;
 }
 
-.footer-item {
-  margin-bottom: 20px;
-}
 .footer-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -1350,6 +1354,9 @@ img {
 @media screen and (max-width: 767px) {
   .page-footer {
     padding: 44px 0;
+  }
+  .footer-item {
+    margin-bottom: 20px;
   }
   .footer-container {
     justify-content: space-between;

@@ -1,6 +1,4 @@
 
-.about-text-container {
-}
 .about-top-text {
 	margin-bottom: 20px;
 	display: flex;
@@ -36,10 +34,8 @@ color: $black-color;
 font-size: 16px;
 line-height: 1.62;
 letter-spacing: 0.02em;
-
 color: $secondary-black-color;
 }
-
 .about-bottom-text {
 		margin-bottom: 40px;
 font-size: 14px;
@@ -47,7 +43,6 @@ line-height: 1.86;
 letter-spacing: 0.02em;
 color: $secondary-black-color;
 }
-
 .about-button {
 	color: $black-color;
 		font-weight: 600;
@@ -68,7 +63,6 @@ color: $secondary-black-color;
 	color: $white-color;
 }
 }
-
 
 
 @media screen and (max-width: 767px) {

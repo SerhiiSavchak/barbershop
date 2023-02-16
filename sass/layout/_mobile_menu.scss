@@ -33,9 +33,6 @@
 	height: 19px;
 	fill: $black-color;
 }
-.menu-nav-list {
-
-}
 .menu-nav-item {
 	&:not(:last-child) {
 		margin-bottom: 24px;
@@ -52,7 +49,6 @@ color: $black-color;
 	color: $accent-color;
 }
 }
-
 .menu-tel-link {
 	display: inline-block;
 	margin-top: 64px;
@@ -121,7 +117,6 @@ color:$black-color;
 }
 }
 }
-
 @media screen and (min-width: 768px) {
 	.mobile-menu {
 	display: none;

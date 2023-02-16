@@ -5,8 +5,6 @@ max-width: 1600px;
 	background-color: $booking-bg-color;
 }
 
-.booking-section {
-}
 .booking-title {
 	margin-bottom: 44px;
 	font-family: "Raleway";
@@ -15,18 +13,11 @@ font-size: 42px;
 line-height: 49px;
 text-align: center;
 letter-spacing: 0.05em;
-
 color: $white-color;
+}
 
-}
-.form-booking {
-}
 .name-tel-container {
 	display: flex;
-}
-.label {
-}
-.visually-hidden {
 }
 
 .input {
@@ -66,6 +57,7 @@ background-color: transparent;
 	color: $secondary-grey-color;
 	}
 }
+
 .booking-button {
 	color: $white-color;
 	width:160px;
@@ -84,8 +76,8 @@ background-color: transparent;
 		background-color: $accent-color;
 	}
 }
-.contacts-section {
-}
+
+
 .contacts-title {
 	margin-bottom: 40px;
 	font-family: "Raleway";
@@ -94,17 +86,18 @@ font-size: 42px;
 line-height: 49px;
 text-align: center;
 letter-spacing: 0.05em;
-
 color: $white-color;
 }
-.contacts-address {
-}
+
+
 .contacts-list {
 display: flex;
 	flex-direction: column;
 	gap: 20px;	
 }
 .contacts-item {
+	display: flex;
+	align-items: center;
 }
 .contacts-item:first-child>.contacts-link {
 	font-weight: 700;
@@ -115,7 +108,7 @@ color: $grey-color;
 }
 .contacts-icon {
 	fill: transparent;
-margin-right: 16px;
+margin-right: 20px;
 width: 24px;
 	height: 24px;
 }
@@ -129,10 +122,6 @@ width: 24px;
 	text-decoration-line: underline;
 }
 
-.phone {
-}
-.email {
-}
 .contacts-top-text {
 	margin-bottom: 20px;
 	display: flex;
@@ -152,12 +141,14 @@ margin-right: 20px;
 	background-color: $secondary-grey-color;
 }
 }
+
 .contacts-bottom-text {
   font-size: 18px;
 	line-height: 1.67;
 	letter-spacing: 0.02em;
 	color: $grey-color;
 }
+
 
 .input::placeholder {
 	text-transform: uppercase;
@@ -187,7 +178,7 @@ border-color: $white-color;
 padding-top: 84px;
 	padding-bottom: 84px ;
 }
-.bo
+
 .booking-title {
  max-width: 418px;
  .input {
@@ -205,6 +196,9 @@ margin-bottom: 44px;
 }
 .contacts-address {
 	margin-bottom: 44px;
+}
+.contacts-br {
+	display: none;
 }
 }
 
@@ -238,7 +232,6 @@ padding-top: 100px;
 	display: flex;
 	gap: 80px;
 }
-
 }
 
 @media screen and (max-width: 1199px) {
@@ -277,7 +270,7 @@ padding-bottom: 120px ;
 	width: 270px;
  }
 .contacts-section {
-	padding: 130px 0 120px 100px;
+	padding: 130px 0 120px 115px;
 width: calc(50% - 15px);
 }
 .contacts-address {
