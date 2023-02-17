@@ -38,7 +38,7 @@ color: $grey-color;
 
 @media screen and (max-width: 767px) {
 	.hero-section {
-		background-image:linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(/images/hero/hero-mobile480px.jpg);
+		background-image:linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-mobile480px.jpg);
  background-repeat: no-repeat;
  background-size: cover;
  padding-top: 208px;

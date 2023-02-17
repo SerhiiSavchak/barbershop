@@ -1,6 +1,6 @@
 .prices-section {
 	background-color: #111319;	
-background-image: linear-gradient(to bottom, #171A24 70%, $secondary-grey-color 100%), url(/images/prices/prices-bg-mobile.jpg);
+background-image: linear-gradient(to bottom, #171A24 70%, $secondary-grey-color 100%), url(../images/prices/prices-bg-mobile.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin:0 auto;
@@ -130,7 +130,7 @@ background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 @media screen and (min-width:1200px) {
 .prices-section {
-	background-image: url(/images/prices/prices-bg-desctop.jpg);
+	background-image: url(../images/prices/prices-bg-desctop.jpg);
 	max-width: 1600px;
 }
 .prices-wrap {
